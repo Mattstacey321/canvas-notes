@@ -1,0 +1,26 @@
+{
+  "name": "canvas-notes",
+  "version": "0.0.1",
+  "description": "Think, Connect, Decide - Decision canvas platform",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter=api start:dev",
+    "build": "pnpm --filter=./apps --parallel build",
+    "test": "pnpm --filter=./apps --parallel test",
+    "lint": "pnpm --filter=./apps --parallel lint",
+    "format": "pnpm --filter=./apps --parallel format"
+  },
+  "devDependencies": {
+    "eslint": "9.39.1",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
